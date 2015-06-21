@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lxvoip.MainActivity" >
+
+    <FrameLayout
+        android:id="@+id/main_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_radio" />
+    
+ <RadioGroup
+     android:layout_alignParentBottom="true"
+            android:id="@+id/main_radio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/dialerButton"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/dialer_bg"
+                android:layout_marginLeft="6dp"
+                android:checked="true"
+                android:text="@string/dialer" />
+
+            <RadioButton
+                android:id="@+id/contactButton"
+                style="@style/main_tab_bottom"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/contact_bg"
+                
+                android:text="@string/contact" />
+
+            
+
+            <RadioButton
+                android:id="@+id/findButton"
+                style="@style/main_tab_bottom"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:drawableTop="@drawable/find_bg"
+                android:text="@string/find" />
+
+            
+                <RadioButton
+                android:id="@+id/domainButton"
+                style="@style/main_tab_bottom"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:drawableTop="@drawable/domain_bg"
+                android:text="@string/domain" />
+        </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+               android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/username"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint=" phone number..." />
+        </TableRow>
+
+    
+   <View 
+         android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#E8FAFA"
+        android:layout_marginBottom="10dp"
+        />    
+        
+        
+        
+        
+        
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              
+                android:background="@drawable/password"
+                android:textSize="20dp" />
+
+            <EditText
+                  android:id="@+id/phonePwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                   android:background="@null"
+                android:hint="phone password..." />
+        </TableRow>
+        
+           <View 
+         android:layout_width="fill_parent"
+         android:layout_height="1dp"
+        android:background="#E8FAFA"
+        />    
+    </TableLayout>
+
+
+    
+
+    
+    
+
+  
+    <CheckBox
+        android:id="@+id/auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tableLayout1"
+        android:layout_below="@+id/tableLayout1"
+        android:text="自动" />
+
+    <CheckBox
+        android:id="@+id/rember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout1"
+        android:layout_alignLeft="@+id/tableLayout1"
+        android:text="记住" />
+    
+    
+    
+    
+  <Button 
+       android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rember"
+  android:layout_marginLeft="10dp"
+  android:layout_marginRight="10dp"
+       android:alpha="0.2"
+        android:text="Logining" 
+      />
+
+  <TextView
+      android:id="@+id/reg"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="17dp"
+      android:textColor="#FFFFFF"
+      android:alpha="0.3"
+      android:text="Register and Question" />
+  
+
+</RelativeLayout>

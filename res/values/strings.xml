@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="names">
+        <item>账户管理</item>
+          <item>拨打方式</item>
+            <item>优惠活动</item>
+              <item>更改密码</item>
+                <item>信息反馈</item>
+                  <item>联系客服</item>
+                    <item>关于我们</item>
+                    </string-array>
+      
+    
+    <string name="app_name">灵犀网络电话</string>
+    <string name="hello_world">Helloaas world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- 四个tab的文字 -->
+    
+    <string name="dialer">记录</string>
+    <string name="contact">话簿</string>
+    <string name="find">发现</string>
+    <string name="domain">地盘</string>
+    
+    
+</resources>

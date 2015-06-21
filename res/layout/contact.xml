@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_top_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/topCallsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="电话簿"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <com.example.lxvoip.diyview.QuickAlphabeticBar
+        android:id="@+id/fast_scroller"
+        android:layout_width="22dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayoutinput"
+        android:layout_gravity="top|right|center"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/dic_background" />
+
+    <FrameLayout 
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+        >
+        
+         <TextView
+        android:id="@+id/fast_position"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+     
+        android:background="@drawable/sort_icon_bg_click"
+        android:gravity="center"
+        android:padding="2dip"
+        android:textColor="#404040"
+        android:textSize="48dip"
+        android:visibility="invisible" />
+    
+    </FrameLayout>
+   
+
+    
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayoutinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout6"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+    
+        
+        <EditText 
+            android:id="@+id/inputSearch"
+          android:layout_width="match_parent"
+        android:layout_height="45dp"
+            android:hint="支持汉字,拼音,电话号码搜索！"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@drawable/bohaopan_line"
+            android:textSize="15sp"
+            />
+        
+        
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@+id/contactListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayoutinput"
+        android:layout_toLeftOf="@+id/fast_scroller" >
+
+    </ListView>
+
+</RelativeLayout>

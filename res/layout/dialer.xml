@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+       >
+
+  <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_top_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/topCallsButton"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_marginLeft="50dip"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:text="通话记录"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/home_top_btn"
+            android:text="首页"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout6"
+        android:layout_centerHorizontal="true"
+        android:divider="#C0C0C0"
+
+          android:dividerHeight="0.5dp"
+         />
+
+  
+    <include
+              android:id="@+id/bohaopanView"
+    layout="@layout/t9"
+    android:visibility="gone"
+    /> 
+
+
+</RelativeLayout>

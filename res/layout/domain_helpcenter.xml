@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/head_helpcenter"
+        layout="@layout/head" />
+    
+    <TextView
+        android:id="@+id/useKnow"
+        android:layout_below="@id/head_helpcenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="\n\t\t使用须知asasasasa阿阿萨斯as擦阿斯达萨啊算咯as阿萨德就怕sap阿破碎机阿婆"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
