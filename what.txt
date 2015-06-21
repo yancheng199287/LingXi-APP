@@ -1,2 +1,0 @@
-﻿1.Minimum Required SDK  指你的app所支持的android最低版本, 因为不同的版本对应不同的api，表明要使用的 API level.  为了让app尽可能的支持更多的android系统和设备，你应该将这个值设置成在不影响你应用核心功能情况下的最低值。 如果你的app某种特性只能在新版本的android上才能体现出来，但是这又并不是这个app的核心功能的话，你可以设置成只有在支持这一特性的版本上才启用，（参考 支持不同平台的版本 一文）。
-Target SDK（又叫  Build SDK） 一般来讲是最高版本的android或者是api。这个是指你测试你app的版本类型。11
